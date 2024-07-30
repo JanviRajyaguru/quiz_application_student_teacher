@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".teacherMain">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:background="@drawable/border"
+        android:paddingTop="20dp"
+        android:paddingBottom="80dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="#02FFFA"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your unique id"
+        android:layout_marginTop="50dp"
+        android:textSize="22dp"
+        android:backgroundTint="#7D0002"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="50dp"
+        android:textColorHint="#7D0002"
+        android:id="@+id/idtxt"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter password"
+        android:textSize="22dp"
+        android:backgroundTint="#7D0002"
+        android:textColorHint="#7D0002"
+        android:password="true"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:layout_marginRight="50dp"
+        android:layout_below="@id/idtxt"
+        android:id="@+id/passtxt"
+        android:layout_marginTop="20dp"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passtxt"
+        android:id="@+id/continuebtn"
+        android:backgroundTint="#CF4D25
+"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Continue"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

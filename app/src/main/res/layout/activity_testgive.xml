@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#AC87C5"
+    android:layout_height="match_parent"
+    tools:context=".testgive">
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Hello  ! "
+    android:textSize="22sp"
+    android:id="@+id/gretg"
+    android:textColor="@color/black"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="20dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/gretg"
+        android:background="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textColor="@color/black"
+        android:text="what is the smalest header element of html?"
+        android:textSize="25sp"
+        android:id="@+id/questiontxt"
+        android:layout_below="@id/gretg"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/borderblk"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Option 1"
+        android:textSize="25sp"
+        android:layout_below="@id/questiontxt"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="55sp"
+
+        android:background="@drawable/borderblk"
+        android:layout_marginRight="75sp"
+        android:id="@+id/opt1"
+        android:padding="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Option 2"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_below="@id/opt1"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="55sp"
+        android:background="@drawable/borderblk"
+        android:layout_marginRight="75sp"
+        android:id="@+id/opt2"
+        android:padding="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Option 3"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/opt2"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="55sp"
+        android:background="@drawable/borderblk"
+        android:layout_marginRight="75sp"
+        android:id="@+id/opt3"
+        android:padding="5dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Option 4"
+        android:textSize="25sp"
+        android:layout_below="@id/opt3"
+        android:textColor="@color/black"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="55sp"
+        android:background="@drawable/borderblk"
+        android:layout_marginRight="75sp"
+        android:id="@+id/opt4"
+        android:padding="5dp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questiontxt">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbtn1"
+            android:backgroundTint="#E05A19"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbtn2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+
+            android:backgroundTint="#E05A19"
+            android:layout_below="@id/opt1"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbtn3"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#E05A19"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/opt2"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbtn4"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="#E05A19"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/opt3"/>
+
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Question"
+        android:layout_below="@id/opt4"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/btnn"
+        android:textSize="18sp"
+        android:paddingLeft="25dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#667BC6"
+        android:paddingRight="20dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See Result"
+        android:id="@+id/seresbtn"
+        android:layout_below="@id/btnn"
+        android:layout_marginTop="20dp"
+    android:textColor="@color/white"
+    android:layout_centerHorizontal="true"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:backgroundTint="#667BC6"
+    android:textSize="20sp"/>
+
+</RelativeLayout>

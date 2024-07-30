@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AC87C5"
+    tools:context=".studentResult">
+
+
+    <RelativeLayout
+        android:id="@+id/retivlay"
+        android:layout_width="391dp"
+        android:layout_height="619dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/border"
+
+        android:backgroundTint="#DFCCFB">
+
+        <TextView
+            android:id="@+id/tttview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="10dp"
+            android:paddingTop="190dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="190dp"
+            android:text="Hey name u got this mark"
+            android:textColor="#4F1787"
+
+            android:textSize="50sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

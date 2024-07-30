@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AC87C5"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:background="@drawable/bordermain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:backgroundTint="@color/white"
+        android:id="@+id/rel1">
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:src="@drawable/teacher"
+        android:id="@+id/teacherimg"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teacherimg"
+        android:layout_centerHorizontal="true"
+        android:text="I'm Teacher"
+        android:textSize="22dp"
+        android:textColor="@color/white"
+        android:backgroundTint="#667BC6"
+        android:id="@+id/tbtn"
+        android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/bordermain"
+        android:backgroundTint="@color/white"
+        android:padding="10dp"
+        android:id="@+id/rel2">
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:src="@drawable/student"
+        android:id="@+id/studentimg"
+
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/studentimg"
+        android:layout_centerHorizontal="true"
+        android:text="I'm Student"
+        android:textSize="22dp"
+        android:backgroundTint="#667BC6"
+        android:textColor="@color/white"
+        android:id="@+id/sbtn"
+        android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

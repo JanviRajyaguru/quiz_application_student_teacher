@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#AC87C5"
+    android:layout_height="match_parent"
+    tools:context=".studentmain">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hey! To give the test you have to fill all below information :D"
+        android:layout_marginTop="30dp"
+        android:textSize="22sp"
+        android:id="@+id/temptxt"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/temptxt"
+        android:background="@color/black"
+        android:layout_marginTop="10dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/white"
+        android:layout_marginLeft="15dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="30dp"
+        android:layout_marginTop="130dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#7D0002"
+            android:id="@+id/nmtxt"
+            android:backgroundTint="#786C76"
+            android:paddingLeft="5dp"
+            android:padding="10dp"
+            android:textColorHint="#786C76"
+            android:hint="Enter Your Name"
+            android:textSize="22dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#7D0002"
+            android:id="@+id/rnum"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:layout_below="@id/nmtxt"
+            android:backgroundTint="#786C76"
+            android:paddingLeft="5dp"
+            android:padding="10dp"
+            android:textColorHint="#786C76"
+            android:hint="Enter Your Roll Number"
+            android:textSize="22dp"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#7D0002"
+            android:id="@+id/pnum"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:layout_below="@id/rnum"
+            android:backgroundTint="#786C76"
+            android:paddingLeft="5dp"
+            android:padding="10dp"
+            android:textColorHint="#786C76"
+            android:maxLength="10"
+            android:hint="Enter Your Mobile Number"
+            android:textSize="22dp"
+            />
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="#7D0002"
+            android:id="@+id/cap"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/pnum"
+            android:backgroundTint="#786C76"
+            android:paddingLeft="5dp"
+            android:textColorHint="#786C76"
+            android:maxLength="5"
+            android:hint="Enter captcha code"
+            android:textSize="22dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pnum"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/cap"
+            android:text="ashvk"
+            android:padding="5dp"
+            android:textSize="25sp"
+            android:id="@+id/captxt"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:background="@color/black"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start test"
+            android:layout_below="@id/captxt"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:textSize="22sp"
+            android:background="#667BC6"
+            android:id="@+id/nxtbtn"/>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
